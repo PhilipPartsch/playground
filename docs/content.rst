@@ -10,7 +10,7 @@ Content
 
 .. req:: Example requirement two
    :id: R_EXAMPLE_REQUIREMENT_TWO
-   :status: draft
+   :status: accepted
    :safety_state: ASIL_B
    :security_state: Yes
 
