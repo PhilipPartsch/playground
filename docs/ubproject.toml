@@ -1,18 +1,25 @@
 [needs]
 id_required = true
 id_length = 3
-types = [
-   {directive="req", title="Requirement", prefix="R_", color="#BFD8D2", style="node"},
-   {directive="spec", title="Specification", prefix="S_", color="#FEDCD2", style="node"},
-]
+extra_options = [ "safety_state", "security_state" ]
 
-extra_options = ['safety_state', 'security_state']
+[[needs.types]]
+directive = "req"
+title = "Requirement"
+prefix = "R_"
+color = "#BFD8D2"
+style = "node"
 
-global_options = {
-   "safety_state": { "default": "QM"},
-   "security_state": {"default": "No"},
-}
+[[needs.types]]
+directive = "spec"
+title = "Specification"
+prefix = "S_"
+color = "#FEDCD2"
+style = "node"
 
-warnings = {
-   'safety_state_out_of_expected_values': "safety_state == 'QM' or safety_state == 'ASIL_A' or safety_state == 'ASIL_B' or safety_state == 'ASIL_C' or safety_state == 'ASIL_D'",
-}
+[needs.global_options]
+safety_state = {default="QM"}
+security_state = {default="No"}
+
+[needs.warnings]
+safety_state_out_of_expected_values = "safety_state == 'QM' or safety_state == 'ASIL_A' or safety_state == 'ASIL_B' or safety_state == 'ASIL_C' or safety_state == 'ASIL_D'"
