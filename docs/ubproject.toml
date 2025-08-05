@@ -22,4 +22,4 @@ safety_state = {default="QM"}
 security_state = {default="No"}
 
 [needs.warnings]
-safety_state_out_of_expected_values = "safety_state == 'QM' or safety_state == 'ASIL_A' or safety_state == 'ASIL_B' or safety_state == 'ASIL_C' or safety_state == 'ASIL_D'"
+safety_state_out_of_expected_values = "safety_state not in ['QM', 'ASIL_A', 'ASIL_B', 'ASIL_C', 'ASIL_D',]",
