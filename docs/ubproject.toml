@@ -5,3 +5,14 @@ types = [
    {directive="req", title="Requirement", prefix="R_", color="#BFD8D2", style="node"},
    {directive="spec", title="Specification", prefix="S_", color="#FEDCD2", style="node"},
 ]
+
+extra_options = ['safety_state', 'security_state']
+
+global_options = {
+   "safety_state": { "default": "QM"},
+   "security_state": {"default": "No"},
+}
+
+warnings = {
+   'safety_state_out_of_expected_values': "safety_state == 'QM' or safety_state == 'ASIL_A' or safety_state == 'ASIL_B' or safety_state == 'ASIL_C' or safety_state == 'ASIL_D'",
+}
