@@ -1,0 +1,7 @@
+[needs]
+id_required = true
+id_length = 3
+types = [
+   {directive="req", title="Requirement", prefix="R_", color="#BFD8D2", style="node"},
+   {directive="spec", title="Specification", prefix="S_", color="#FEDCD2", style="node"},
+]

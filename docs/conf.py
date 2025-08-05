@@ -121,3 +121,7 @@ epub_show_urls = 'footnote'
 ifelse_variants = {
    'ifelse_OS': 'ifelse_Linux',
 }
+
+# -- Sphinx-Needs
+
+needs_from_toml = "ubproject.toml"
