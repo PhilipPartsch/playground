@@ -1,7 +1,7 @@
 [needs]
 id_required = true
 id_length = 3
-extra_options = [ "safety_state", "security_state", "approval", "efforts", "asil" ]
+extra_options = [ "safety_state", "security_state", "approved", "approval", "efforts", "asil" ]
 # statuses = [{name="draft"}, {name="accepted"}]
 schema_definitions_from_json = "schemas.json"
 
@@ -38,6 +38,7 @@ status = {default="draft"}
 safety_state = {default="QM"}
 security_state = {default="No"}
 approval = {default="False"}
+approved = {default="False"}
 efforts = {default="0"}
 asil = {default="QM"}
 
