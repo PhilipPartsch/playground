@@ -38,7 +38,7 @@ status = {default="draft"}
 safety_state = {default="QM"}
 security_state = {default="No"}
 approval = {default="False"}
-efforts = {default=0}
+efforts = {default="0"}
 asil = {default="QM"}
 
 [needs.warnings]
