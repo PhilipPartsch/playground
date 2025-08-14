@@ -45,6 +45,7 @@ jobs:
         git clone https://github.com/useblocks/sphinx-needs.git ./sphinx_needs
         python -m pip install ./sphinx_needs/
     - name: Install dependencies
+      if: False
       run: |
         python -m pip install -r ./docs/requirements.txt
     - name: Lint the project with sphinx-lint
