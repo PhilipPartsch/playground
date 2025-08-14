@@ -32,7 +32,7 @@ color = "#D3DB8B"
 style = "node"
 
 [[needs.extra_options]]
-name = "safety_state"
+name = "asil"
 description = "Automotive Safety Integrity Level"
 schema.type = "string"
 schema.enum = ["QM", "A", "B", "C", "D"]
@@ -43,7 +43,7 @@ description = "Security flag"
 schema.type = "boolean"
 
 [[needs.extra_options]]
-name = "asil"
+name = "safety_state"
 description = "Automotive Safety Integrity Level"
 schema.type = "string"
 schema.enum = ["QM", "ASIL_A", "ASIL_B", "ASIL_C", "ASIL_D"]
