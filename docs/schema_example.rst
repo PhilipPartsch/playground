@@ -14,7 +14,7 @@ Examples for schema validation
    [Test]
 
 .. spec:: Example specification one
-   :id: S_EXAMPLE_SCHEMA_SPECIFICATION_ONE
+   :id: SPEC_EXAMPLE_SCHEMA_SPECIFICATION_ONE
    :asil: C
 
    [Test]

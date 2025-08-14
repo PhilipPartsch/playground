@@ -17,7 +17,7 @@ Content
    Set safety_state manual to ASIL_B and security_state manual to Yes.
 
 .. spec:: Example specification one
-   :id: R_EXAMPLE_SPECIFICATION_ONE
+   :id: SPEC_EXAMPLE_SPECIFICATION_ONE
    :status: draft
 
    Set safety_state and security_state to default values.
