@@ -1,7 +1,7 @@
 sphinx
 sphinxcontrib.jquery
 sphinxcontrib-plantuml
-sphinx-needs
+#sphinx-needs
 sphinx-ifelse
 matplotlib
 sphinx-copybutton

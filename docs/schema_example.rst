@@ -14,13 +14,13 @@ Examples for schema validation
    [Test]
 
 .. spec:: Example specification one
-   :id: R_EXAMPLE_SCHEMA_SPECIFICATION_ONE
+   :id: S_EXAMPLE_SCHEMA_SPECIFICATION_ONE
    :asil: C
 
    [Test]
 
 .. impl:: Example implementation one
-   :id: R_EXAMPLE_SCHEMA_IMPLEMENTATION_ONE
+   :id: I_EXAMPLE_SCHEMA_IMPLEMENTATION_ONE
    :asil: D
 
    [Test]
