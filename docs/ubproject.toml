@@ -61,8 +61,6 @@ schema.type = "boolean"
 
 [needs.global_options]
 status = {default="draft"}
-safety_state = {default="QM"}
-security_state = {default="False"}
 approved = {default="False"}
 efforts = {default="0"}
 asil = {default="QM"}
