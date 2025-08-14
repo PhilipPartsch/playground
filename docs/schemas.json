@@ -57,7 +57,8 @@
           "properties": {
             "id": { "pattern": "^SPEC_[a-zA-Z0-9_-]*$" },
             "efforts": { "minimum": 0 }
-          }
+          },
+          "unevaluatedProperties": false
         }
       }
     },
