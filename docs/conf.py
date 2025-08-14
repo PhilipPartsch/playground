@@ -48,7 +48,7 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx_needs',
     'sphinxcontrib.plantuml',
-    'sphinxcontrib.test_reports',
+    #'sphinxcontrib.test_reports',
     'sphinxcontrib.collections',
     'sphinxcontrib.jquery', # https://github.com/sphinx-contrib/jquery
     'sphinx_preview',
