@@ -1,8 +1,16 @@
 [needs]
 id_required = true
 id_length = 3
-extra_options = [ "safety_state", "security_state" ]
+extra_options = [ "safety_state", "security_state", "approval", "efforts", "asil" ]
 statuses = [{name="draft"}, {name="accepted"}]
+schema_definitions_from_json = "schemas.json"
+
+[[needs.types]]
+directive = "feat"
+title = "Feature"
+prefix = "F_"
+color = "#FEDCD2"
+style = "node"
 
 [[needs.types]]
 directive = "req"
@@ -21,6 +29,9 @@ style = "node"
 [needs.global_options]
 safety_state = {default="QM"}
 security_state = {default="No"}
+approval = {default="False"}
+efforts = {default=0}
+asil = {default="QM"}
 
 [needs.warnings]
 safety_state_out_of_expected_values = "safety_state not in ['QM', 'ASIL_A', 'ASIL_B', 'ASIL_C', 'ASIL_D']"
