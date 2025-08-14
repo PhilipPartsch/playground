@@ -2,7 +2,7 @@
 id_required = true
 id_length = 3
 extra_options = [ "safety_state", "security_state", "approval", "efforts", "asil" ]
-statuses = [{name="draft"}, {name="accepted"}]
+# statuses = [{name="draft"}, {name="accepted"}]
 schema_definitions_from_json = "schemas.json"
 
 [[needs.types]]
