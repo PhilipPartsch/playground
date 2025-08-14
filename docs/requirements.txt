@@ -16,6 +16,6 @@ esbonio>=0.13.0
 pytest
 pytest-reportlog
 coverage
-sphinx-collections
+#sphinx-collections
 sphinx-preview
 sphinx-lint

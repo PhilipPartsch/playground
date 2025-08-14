@@ -49,7 +49,7 @@ extensions = [
     'sphinx_needs',
     'sphinxcontrib.plantuml',
     #'sphinxcontrib.test_reports',
-    'sphinxcontrib.collections',
+    #'sphinxcontrib.collections',
     'sphinxcontrib.jquery', # https://github.com/sphinx-contrib/jquery
     'sphinx_preview',
     #'sphinx_immaterial',
