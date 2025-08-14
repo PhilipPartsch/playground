@@ -7,6 +7,7 @@ Playground
    :maxdepth: 1
 
    content
+   schema_example
 
 Indices and tables
 ******************

@@ -9,7 +9,7 @@ schema_definitions_from_json = "schemas.json"
 directive = "feat"
 title = "Feature"
 prefix = "F_"
-color = "#FEDCD2"
+color = "#8EDB8B"
 style = "node"
 
 [[needs.types]]
@@ -26,7 +26,15 @@ prefix = "S_"
 color = "#FEDCD2"
 style = "node"
 
+[[needs.types]]
+directive = "impl"
+title = "Implementation"
+prefix = "I_"
+color = "#D3DB8B"
+style = "node"
+
 [needs.global_options]
+status = {default="draft"}
 safety_state = {default="QM"}
 security_state = {default="No"}
 approval = {default="False"}
