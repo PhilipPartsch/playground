@@ -59,8 +59,8 @@ name = "approved"
 description = "Approval flag"
 schema.type = "boolean"
 
-[needs.global_options]
-status = {default="draft"}
-approved = {default="False"}
-efforts = {default="0"}
-asil = {default="QM"}
+#[needs.global_options]
+#status = {default="draft"}
+#approved = {default="False"}
+#efforts = {default="0"}
+#asil = {default="QM"}
