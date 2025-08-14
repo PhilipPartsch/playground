@@ -1,8 +1,6 @@
 [needs]
 id_required = true
 id_length = 3
-extra_options = [ "safety_state", "security_state", "approved", "approval", "efforts", "asil" ]
-# statuses = [{name="draft"}, {name="accepted"}]
 schema_definitions_from_json = "schemas.json"
 
 [[needs.types]]
@@ -33,15 +31,38 @@ prefix = "I_"
 color = "#D3DB8B"
 style = "node"
 
+[[needs.extra_options]]
+name = "safety_state"
+description = "Automotive Safety Integrity Level"
+schema.type = "string"
+schema.enum = ["QM", "A", "B", "C", "D"]
+
+[[needs.extra_options]]
+name = "security_state"
+description = "Security flag"
+schema.type = "boolean"
+
+[[needs.extra_options]]
+name = "asil"
+description = "Automotive Safety Integrity Level"
+schema.type = "string"
+schema.enum = ["QM", "ASIL_A", "ASIL_B", "ASIL_C", "ASIL_D"]
+
+[[needs.extra_options]]
+name = "efforts"
+description = "FTE days"
+schema.type = "integer"
+schema.minimum = 0
+
+[[needs.extra_options]]
+name = "approved"
+description = "Approval flag"
+schema.type = "boolean"
+
 [needs.global_options]
 status = {default="draft"}
 safety_state = {default="QM"}
-security_state = {default="No"}
-approval = {default="False"}
-approved = {default="False"}
-efforts = {default="0"}
+security_state = {default=False}
+approved = {default=False}
+efforts = {default=0}
 asil = {default="QM"}
-
-[needs.warnings]
-safety_state_out_of_expected_values = "safety_state not in ['QM', 'ASIL_A', 'ASIL_B', 'ASIL_C', 'ASIL_D']"
-security_state_out_of_expected_values = "security_state not in ['No', 'Yes']"
