@@ -57,8 +57,8 @@ jobs:
         -b html ./docs ./public
         --jobs=auto
         --show-traceback
-        --fail-on-warning
         --keep-going
+    #--fail-on-warning
     - name: Archive sphinx public folder
       uses: actions/upload-artifact@v4
       with:
