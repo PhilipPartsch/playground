@@ -184,9 +184,9 @@ def copyall(
         if lower:
             values.append(str(value).lower())
         if upper:
-            values.appned(str(value).upper())
+            values.append(str(value).upper())
         if not lower and not upper:
-            values.appned(value)
+            values.append(value)
 
     str_values = ", ".join(values)
 
