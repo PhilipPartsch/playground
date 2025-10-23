@@ -135,7 +135,7 @@ def getUnits(app, need, needs, *args, **kwargs):
 
     for n in needs:
         current_file = n.docname + n.doctype
-        if current_file == need_file and n.type ="unit":
+        if current_file == need_file and n.type == "unit":
             linked_needs.append(n.id)
 
     return linked_needs
