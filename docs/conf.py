@@ -140,6 +140,9 @@ def getUnits(app, need, needs, *args, **kwargs):
 
     return linked_needs
 
+from sphinx_needs.config import NeedsSphinxConfig
+from sphinx_needs.filter_common import filter_needs_and_parts
+
 def copyall(
     app: Sphinx,
     need: NeedItem | NeedPartItem | None,
