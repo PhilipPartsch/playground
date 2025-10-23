@@ -171,10 +171,7 @@ def copyall(
             location=location,
         )
 
-    print("result")
-    print(result)
-
-    if result is None:
+    if 0 == len(result):
         raise ValueError("Needs not found")
 
     if option not in result[0]:
