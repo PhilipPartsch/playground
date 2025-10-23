@@ -7,4 +7,4 @@ Pilot for Detailed Design
    :maxdepth: 1
    :glob:
 
-   ./dd/*
+   dd/*
