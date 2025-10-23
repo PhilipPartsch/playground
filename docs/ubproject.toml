@@ -74,9 +74,9 @@ description = "Approval flag"
 schema.type = "boolean"
 
 [[needs.extra_links]]
-option = "parts"
-incoming = "part of"
-outgoing = "parts"
+option = "details"
+incoming = "detail of"
+outgoing = "details"
 style = "#00AA00"
 style_start = "-"
 style_end = "->"

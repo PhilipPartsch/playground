@@ -4,7 +4,7 @@ Component 1
 
 .. comp:: Component 1
    :id: C_CMP_1
-   :parts: [[getUnits()]]
+   :details: [[getUnits()]]
 
 .. unit:: Unit 1
    :id: U_UNIT_1
