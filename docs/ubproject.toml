@@ -8,7 +8,7 @@ build_json = true
 directive = "feat"
 title = "Feature"
 prefix = "F_"
-color = "#8EDB8B"
+color = "#dba48bff"
 style = "folder"
 
 [[needs.types]]
