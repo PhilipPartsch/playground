@@ -130,13 +130,13 @@ from sphinx_needs.api import add_dynamic_function
 
 def getUnits(app, need, needs, *args, **kwargs):
     # Do magic here
-    need_file = need.docname + need.doctype
+    need_file = need["docname"] + need["doctype"]
     linked_needs = []
 
     for n in needs:
-        current_file = n.docname + n.doctype
-        if current_file == need_file and n.type == "unit":
-            linked_needs.append(n.id)
+        current_file = n["docname"] + n["doctype"]
+        if current_file == need_file and n["type"] == "unit":
+            linked_needs.append(n["id"])
 
     return linked_needs
 
