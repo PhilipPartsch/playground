@@ -171,6 +171,9 @@ def copyall(
             location=location,
         )
 
+    print("result")
+    print(result)
+
     if result is None:
         raise ValueError("Needs not found")
 
@@ -181,11 +184,11 @@ def copyall(
 
     for n in result:
         value = n[option]
-        if lower:
-            values.append(str(value).lower())
         if upper:
             values.append(str(value).upper())
-        if not lower and not upper:
+        elif lower:
+            values.append(str(value).lower())
+        else:
             values.append(value)
 
     str_values = ", ".join(values)
