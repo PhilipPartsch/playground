@@ -8,6 +8,7 @@ Playground
 
    content
    schema_example
+   dd
 
 Indices and tables
 ******************

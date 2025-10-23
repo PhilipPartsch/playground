@@ -31,6 +31,20 @@ prefix = "I_"
 color = "#D3DB8B"
 style = "node"
 
+[[needs.types]]
+directive = "comp"
+title = "Component"
+prefix = "C_"
+color = "#8bdb8bff"
+style = "node"
+
+[[needs.types]]
+directive = "unit"
+title = "Unit"
+prefix = "U_"
+color = "#8b97dbff"
+style = "node"
+
 [[needs.extra_options]]
 name = "asil"
 description = "Automotive Safety Integrity Level"
