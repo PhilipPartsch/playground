@@ -41,6 +41,7 @@ jobs:
         sudo apt-get install graphviz default-jdk
         sudo apt-get upgrade --yes
     - name: Install sphinx-needs from repo
+      if: False
       run: |
         git clone https://github.com/useblocks/sphinx-needs.git ./sphinx_needs
         python -m pip install ./sphinx_needs/
