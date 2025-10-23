@@ -2,6 +2,7 @@
 id_required = true
 id_length = 3
 schema_definitions_from_json = "schemas.json"
+build_json = True
 
 [[needs.types]]
 directive = "feat"
@@ -87,5 +88,8 @@ status.default = "draft"
 approved.default = "False"
 efforts.default = "0"
 asil.default = "QM"
-details.predicates = [["type == 'comp'", "[[copyall('id', filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"]]
+details.predicates = [
+   ["type == 'feat'", "[[copyall('id', filter='current_need[\"docname\"] == docname and type == \"comp\"')]]"],
+   ["type == 'comp'", "[[copyall('id', filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
+]
 
