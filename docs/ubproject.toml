@@ -87,7 +87,7 @@ status = {default="draft"}
 approved = {default="False"}
 efforts = {default="0"}
 asil = {default="QM"}
-details.predicates = [["type == 'comp'", "[[copy('id', filter='current_need[\"docname\"] == docname and type == \"unit\")]]"]]
+details.predicates = [["type == 'comp'", "[[copy('id', 'U_UNIT_1')"]]
 
 # "[[copyall('id', filter='current_need[\"docname\"] == docname and type == \"unit\")]]"
 
