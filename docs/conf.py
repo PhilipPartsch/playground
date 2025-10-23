@@ -190,4 +190,4 @@ def copyall(
     return values
 
 def setup(app):
-    add_dynamic_function(app, getUnits)
+    add_dynamic_function(app, copyall)
