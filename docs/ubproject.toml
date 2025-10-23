@@ -87,6 +87,6 @@ status = {default="draft"}
 approved = {default="False"}
 efforts = {default="0"}
 asil = {default="QM"}
-details = {predicates = ("type == 'comp'", "U_UNIT_1")}
+details = {predicates=("type == 'comp'", "U_UNIT_1")}
 
 
