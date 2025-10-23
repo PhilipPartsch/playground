@@ -1,0 +1,17 @@
+{# Place the original content here #}
+{{content}}
+
+:np:`(Deployment)` Diagram
+
+{% raw %}
+.. needarch::
+   :key: Deployment
+
+   {{flow(need().id)}} {
+   {% for detail in need().details %}
+   {{flow(detail)}}
+   {% endfor %}
+   {% if 'Deployment' in need().parts %}card "Deployment Diagram" as {{need().id + '.Deployment'}} {{ref(need().id + '.Deployment')}}{% endif %}
+   {% if 'Sequence' in need().parts %}card "Sequence Diagram" as {{need().id + '.Sequence'}} {{ref(need().id + '.Sequence')}}{% endif %}
+   }
+{% endraw %}

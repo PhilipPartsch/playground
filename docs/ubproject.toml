@@ -92,4 +92,8 @@ details.predicates = [
    ["type == 'feat'", "[[copyall('id', filter='type == \"comp\"')]]"],
    ["type == 'comp'", "[[copyall('id', filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
 ]
+template = [
+   ["type == 'feat'", "feat_template"],
+   ["type == 'comp'", "feat_template"],
+]
 
