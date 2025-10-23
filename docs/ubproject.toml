@@ -83,11 +83,9 @@ style_end = "->"
 
 
 [needs.global_options]
-status = {default="draft"}
-approved = {default="False"}
-efforts = {default="0"}
-asil = {default="QM"}
-#details.predicates = [["type == 'comp'", "[[copy('id', 'U_UNIT_1')"]]
+status.default = "draft"
+approved.default = "False"
+efforts.default = "0"
+asil.default = "QM"
 details.predicates = [["type == 'comp'", "[[copyall('id', filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"]]
-# "[[copyall('id', filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"
 
