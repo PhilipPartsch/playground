@@ -9,7 +9,7 @@ directive = "feat"
 title = "Feature"
 prefix = "F_"
 color = "#8EDB8B"
-style = "node"
+style = "folder"
 
 [[needs.types]]
 directive = "req"
@@ -37,14 +37,14 @@ directive = "comp"
 title = "Component"
 prefix = "C_"
 color = "#8bdb8bff"
-style = "node"
+style = "frame"
 
 [[needs.types]]
 directive = "unit"
 title = "Unit"
 prefix = "U_"
 color = "#8b97dbff"
-style = "node"
+style = "card"
 
 [[needs.extra_options]]
 name = "asil"
