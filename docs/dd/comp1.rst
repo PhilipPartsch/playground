@@ -4,7 +4,7 @@ Component 1
 
 .. comp:: Component 1
    :id: C_CMP_1
-   :details: [[copy('id', filter='current_need["docname"] == docname and type == "unit"')]]
+   :details: [[copyall('id', filter='current_need["docname"] == docname and type == "unit"')]]
 
 .. unit:: Unit 1
    :id: U_UNIT_1

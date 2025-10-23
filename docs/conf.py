@@ -140,5 +140,54 @@ def getUnits(app, need, needs, *args, **kwargs):
 
     return linked_needs
 
+def copyall(
+    app: Sphinx,
+    need: NeedItem | NeedPartItem | None,
+    needs: NeedsMutable | NeedsView,
+    option: str,
+    need_id: str | None = None,
+    lower: bool = False,
+    upper: bool = False,
+    filter: str | None = None,
+) -> Any:
+    """
+    Copies the value of needs option to another need.
+    """
+    if need_id:
+        need = needs[need_id]
+
+    if filter:
+        location = (
+            (need["docname"], need["lineno"]) if need and need["docname"] else None
+        )
+        result = filter_needs_and_parts(
+            needs.values(),
+            NeedsSphinxConfig(app.config),
+            filter,
+            need,
+            location=location,
+        )
+
+    if result is None:
+        raise ValueError("Needs not found")
+
+    if option not in result[0]:
+        raise ValueError(f"Option {option} not found in need needs config.")
+
+    values = []
+
+    for n in result:
+        value = n[option]
+        if lower:
+            values.append(str(value).lower())
+        if upper:
+            values.appned(str(value).upper())
+        if not lower and not upper:
+            values.appned(value)
+
+    str_values = ", ".join(values)
+
+    return values
+
 def setup(app):
     add_dynamic_function(app, getUnits)
