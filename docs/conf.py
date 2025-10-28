@@ -200,8 +200,6 @@ def copyall(
         else:
             values.append(value)
 
-    str_values = ", ".join(values)
-
     return values
 
 def setup(app):
