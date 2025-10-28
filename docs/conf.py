@@ -191,8 +191,8 @@ def copyall(
 
     values = []
 
-    for n in result:
-        value = n[option]
+    for r in result:
+        value = r[option]
         if upper:
             values.append(str(value).upper())
         elif lower:
