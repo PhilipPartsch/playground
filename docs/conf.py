@@ -187,7 +187,7 @@ def copyall(
         raise ValueError("Needs not found")
 
     if option not in result[0]:
-        raise ValueError(f"Option {option} not found in need needs config.")
+        raise ValueError(f"Option {option} not found in needs config.")
 
     values = []
 
