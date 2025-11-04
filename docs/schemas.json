@@ -60,7 +60,7 @@
             "asil": {},
             "approved": {}
           },
-          "unevaluatedProperties": false
+          "unevaluatedProperties": true
         }
       }
     },
