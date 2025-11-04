@@ -174,7 +174,7 @@ def copyall(
     print("current need: " + str(need["id"]))
     print("foldername: " +str(need["foldername"]))
 
-    for n in needs:
+    for n in needs.values():
         print("foldername: " + str(n["foldername"]) + " for need: " + str(n["id"]))
 
     if filter:
