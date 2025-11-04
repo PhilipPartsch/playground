@@ -95,8 +95,8 @@ approved.default = "False"
 efforts.default = "0"
 asil.default = "QM"
 details.predicates = [
-   ["type == 'feat'", "[[copyall('id', filter='type == \"comp\"')]]"],
-   ["type == 'comp'", "[[copyall('id', filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
+   ["type == 'feat'", "[[copyall('id', filter='current_need[\"foldername\"] == foldername and type == \"comp\"')]]"],
+   ["type == 'comp'", "[[copyall('id', filter='current_need[\"docname\"]    == docname    and type == \"unit\"')]]"],
 ]
 template.predicates = [
    ["type == 'feat'", "feat_template"],
