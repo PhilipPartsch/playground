@@ -171,6 +171,9 @@ def copyall(
     if need_id:
         need = needs[need_id]
 
+    print("cuurent need: " + str(need_id))
+    print("foldername: " +str(need["foldername"]))
+
     if filter:
         location = (
             (need["docname"], need["lineno"]) if need and need["docname"] else None
