@@ -175,7 +175,7 @@ def copyall(
     print("foldername: " +str(need["foldername"]))
 
     for n in needs:
-        print("foldername: " + str(need["foldername"]) + " for need: " + str(need["id"]))
+        print("foldername: " + str(n["foldername"]) + " for need: " + str(n["id"]))
 
     if filter:
         location = (
