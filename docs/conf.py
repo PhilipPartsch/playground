@@ -217,4 +217,4 @@ def getfoldername(
 
 def setup(app):
     add_dynamic_function(app, copyall)
-    #add_dynamic_function(app, getfoldername)
+    add_dynamic_function(app, getfoldername)

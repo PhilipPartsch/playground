@@ -89,7 +89,7 @@ style_end = "->"
 
 
 [needs.global_options]
-# foldername.default = "[[getfoldername()]]"
+foldername.default = "[[getfoldername()]]"
 status.default = "draft"
 approved.default = "False"
 efforts.default = "0"
