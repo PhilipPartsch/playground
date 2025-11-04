@@ -34,13 +34,13 @@ jobs:
     - name: print versions for debugging
       run: python --version ; pip --version ; whoami ; pwd
     - name: Install graphviz & default-jdk
-      if: False
       run: |
         sudo apt-get update
         sudo apt-get upgrade --yes
         sudo apt-get install graphviz default-jdk
         sudo apt-get upgrade --yes
     - name: Install graphviz & default-jdk mini
+      if: False
       run: |
         sudo apt-get install graphviz default-jdk
     - name: Install sphinx-needs from repo
