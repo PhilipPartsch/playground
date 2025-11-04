@@ -202,5 +202,19 @@ def copyall(
 
     return values
 
+def getfoldername(
+    app: Sphinx,
+    need: NeedItem | NeedPartItem | None,
+    needs: NeedsMutable | NeedsView,
+) -> Any:
+    folder_name: str = ""
+    if need:
+        docname = need['docname']
+        from pathlib import Path
+        folder_name = str(Path(docname).parent)
+
+    return folder_name
+
 def setup(app):
     add_dynamic_function(app, copyall)
+    add_dynamic_function(app, getfoldername)
