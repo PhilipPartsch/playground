@@ -74,11 +74,6 @@ name = "approved"
 description = "Approval flag"
 schema.type = "boolean"
 
-[[needs.extra_options]]
-name = "foldername"
-description = "Name of the folder"
-schema.type = "string"
-
 [[needs.extra_links]]
 option = "details"
 incoming = "detail of"
@@ -89,7 +84,6 @@ style_end = "->"
 
 
 [needs.global_options]
-foldername.default = "[[getfoldername()]]"
 status.default = "draft"
 approved.default = "False"
 efforts.default = "0"
