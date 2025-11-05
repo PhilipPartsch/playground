@@ -94,7 +94,6 @@ status.default = "draft"
 approved.default = "False"
 efforts.default = "0"
 asil.default = "QM"
-.rsplit('/', 1)[0] == b.rsplit('/', 1)[0]
 
 details.predicates = [
    ["type == 'feat'", "[[copyall('id', filter='current_need[\"docname\"].rsplit('/', 1)[0] == docname.rsplit('/', 1)[0] and type == \"comp\"')]]"],
