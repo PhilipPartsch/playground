@@ -5,11 +5,11 @@ Component 2
 .. comp:: Component 2
    :id: C_CMP_2
 
-.. unit:: Unit A
-   :id: U_UNIT_A
+.. unit:: Unit 4
+   :id: U_UNIT_4
 
-.. unit:: Unit B
-   :id: U_UNIT_B
+.. unit:: Unit 5
+   :id: U_UNIT_5
 
-.. unit:: Unit C
-   :id: U_UNIT_C
+.. unit:: Unit 6
+   :id: U_UNIT_6
