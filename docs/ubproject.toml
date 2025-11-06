@@ -97,12 +97,12 @@ efforts.default = "0"
 asil.default = "QM"
 
 details.predicates = [
-   #["type == 'feat'", "[[copyall('id', filter='current_need[\"docname\"].rsplit('/', 1)[0] == docname.rsplit('/', 1)[0] and type == \"comp\"')]]"],
+   ["type == 'platform'", "[[copyall('id', filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0]and type == \"feat\"')]]"],
    ["type == 'feat'", "[[copyall('id', filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0]and type == \"comp\"')]]"],
-
    ["type == 'comp'", "[[copyall('id', filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
 ]
 template.predicates = [
+   ["type == 'platform'", "feat_template"],
    ["type == 'feat'", "feat_template"],
    ["type == 'comp'", "feat_template"],
 ]

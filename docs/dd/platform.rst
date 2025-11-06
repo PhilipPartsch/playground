@@ -9,5 +9,5 @@ Platform
 
    feat*/*
 
-.. platform:: Firts platform
+.. platform:: First platform
    :id: P_PLATFORM_1
