@@ -90,7 +90,9 @@ efforts.default = "0"
 asil.default = "QM"
 
 details.predicates = [
-   ["type == 'feat'", "[[copyall('id', filter='current_need[\"docname\"].rsplit('/', 1)[0] == docname.rsplit('/', 1)[0] and type == \"comp\"')]]"],
+   #["type == 'feat'", "[[copyall('id', filter='current_need[\"docname\"].rsplit('/', 1)[0] == docname.rsplit('/', 1)[0] and type == \"comp\"')]]"],
+   ["type == 'feat'", "[[copyall('id', filter='type == \"comp\"')]]"],
+
    ["type == 'comp'", "[[copyall('id', filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
 ]
 template.predicates = [
