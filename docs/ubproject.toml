@@ -5,13 +5,6 @@ schema_definitions_from_json = "schemas.json"
 build_json = true
 
 [[needs.types]]
-directive = "feat"
-title = "Feature"
-prefix = "F_"
-color = "#dba48bff"
-style = "folder"
-
-[[needs.types]]
 directive = "req"
 title = "Requirement"
 prefix = "R_"
@@ -31,6 +24,20 @@ title = "Implementation"
 prefix = "I_"
 color = "#D3DB8B"
 style = "node"
+
+[[needs.types]]
+directive = "platform"
+title = "Platform"
+prefix = "P_"
+color = "#db8bbaff"
+style = "folder"
+
+[[needs.types]]
+directive = "feat"
+title = "Feature"
+prefix = "F_"
+color = "#dba48bff"
+style = "folder"
 
 [[needs.types]]
 directive = "comp"
