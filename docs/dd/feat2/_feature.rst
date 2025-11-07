@@ -10,7 +10,6 @@ Secound Feature
 
    .. needarch::
       :key: Sequence
-      :debug:
 
       {%- set cn = need().id -%}
       {{sequence(needs, cn)}} {{ref(cn)}}

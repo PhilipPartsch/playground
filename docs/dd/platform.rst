@@ -18,11 +18,20 @@ Platform
       :key: Sequence
       :debug:
 
+      {%- set cn = need().id -%}
+      {{sequence(needs, cn)}} {{ref(cn)}}
+
+      activate {{ cn }}
+
       'add your needed sphinx-needs elements to the list "features"
       {%- set features = need().details -%}
       {% for f in features %}
+      {{ cn }} -> {{ f }}
       {{uml(f, 'Sequence')}}
+      {{ f }} -> {{ cn }}
       {% endfor %}
+
+      deactivate {{ cn }}
 
    :np:`(Detailed)` Diagram
 
@@ -30,8 +39,10 @@ Platform
       :key: Detailed
       :debug:
 
+      {{flow(need().id)}} {
       'add your needed sphinx-needs elements to the list "features"
       {%- set features = need().details -%}
       {% for f in features %}
       {{uml(f, 'Deployment')}}
       {% endfor %}
+      }
