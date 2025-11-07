@@ -138,19 +138,36 @@ plantuml_output_format = 'svg'
 
 needs_from_toml = "ubproject.toml"
 
+n_needs_sequence_style = {
+    "platform" : "participant",
+    "feat" : "participant",
+    "comp" : "participant",
+    "unit" : "participant",
+}
+
+needs_render_context = {
+    "sequence": sequence,
+    "sequence_style": n_needs_sequence_style
+}
+
+def sequence(needs, id):
+    # todo: check that id is part of needs and raise excpetion if not.
+    need_id = id
+    node_text = needs[id]["title"]
+    need_type = needs[id]["type"]
+    style = "participant"
+    if need_type in n_needs_sequence_style:
+        style = n_needs_sequence_style[need_type]
+
+    need_uml = '{style} "{node_text}" as {id}'.format(
+        id=need_id,
+        node_text=node_text,
+        style=style,
+    )
+
+    return need_uml
+
 from sphinx_needs.api import add_dynamic_function
-
-def getUnits(app, need, needs, *args, **kwargs):
-    # Do magic here
-    need_file = need["docname"] + need["doctype"]
-    linked_needs = []
-
-    for n in needs:
-        current_file = n["docname"] + n["doctype"]
-        if current_file == need_file and n["type"] == "unit":
-            linked_needs.append(n["id"])
-
-    return linked_needs
 
 from sphinx_needs.config import NeedsSphinxConfig
 from sphinx_needs.filter_common import filter_needs_and_parts
