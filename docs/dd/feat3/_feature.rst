@@ -33,5 +33,6 @@ Thired Feature
       {{ components[i] }} <- {{ components[i-1] }}
       deactivate {{ components[i-1] }}
       {% endfor %}
+      {{ cn }} <- {{ components[components|length - 1] }}
       deactivate {{ components[components|length - 1] }}
       deactivate {{ cn }}

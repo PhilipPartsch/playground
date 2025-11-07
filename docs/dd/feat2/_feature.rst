@@ -33,5 +33,6 @@ Secound Feature
       {{ components[i] }} <- {{ components[i+1] }}
       deactivate {{ components[i+1] }}
       {% endfor %}
+      {{ cn }} <- {{ components[0] }}
       deactivate {{ components[0] }}
       deactivate {{ cn }}
