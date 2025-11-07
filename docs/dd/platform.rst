@@ -16,7 +16,6 @@ Platform
 
    .. needarch::
       :key: Sequence
-      :debug:
 
       {%- set cn = need().id -%}
       {{sequence(needs, cn)}} {{ref(cn)}}
@@ -37,7 +36,6 @@ Platform
 
    .. needarch::
       :key: Detailed
-      :debug:
 
       {{flow(need().id)}} {
       'add your needed sphinx-needs elements to the list "features"
