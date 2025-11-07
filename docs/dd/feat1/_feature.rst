@@ -3,7 +3,7 @@ First Feature
 #############
 
 
-.. feat:: First Example Feature
+.. feat:: First Feature
    :id: F_FEAT_1
 
    :np:`(Sequence)` Diagram

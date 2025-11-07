@@ -3,7 +3,7 @@ Thired Feature
 ##############
 
 
-.. feat:: Third Example Feature
+.. feat:: Third Feature
    :id: F_FEAT_3
 
    :np:`(Sequence)` Diagram

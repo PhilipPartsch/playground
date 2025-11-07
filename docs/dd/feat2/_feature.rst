@@ -3,7 +3,7 @@ Secound Feature
 ###############
 
 
-.. feat:: Secound Example Feature
+.. feat:: Secound Feature
    :id: F_FEAT_2
 
    :np:`(Sequence)` Diagram
