@@ -21,7 +21,7 @@ Thired Feature
       'here you can add your plantuml sequence diagramm code.
       'documentation can be found here: https://plantuml.com/en/sequence-diagram
 
-      activate {{ components[0] }}
+      activate {{ components[components|length - 1] }}
       {% for i in range(components|length - 1, 0, -1) %}
       {{ components[i] }} -> {{ components[i-1] }}
       activate {{ components[i-1] }}
@@ -29,4 +29,4 @@ Thired Feature
       {{ components[i] }} <- {{ components[i-1] }}
       deactivate {{ components[i-1] }}
       {% endfor %}
-      deactivate {{ components[0] }}
+      deactivate {{ components[components|length - 1] }}
