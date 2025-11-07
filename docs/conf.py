@@ -166,6 +166,8 @@ needs_render_context = {
     "sequence_style": n_needs_sequence_style
 }
 
+suppress_warnings = ["config.cache"]
+
 from sphinx_needs.api import add_dynamic_function
 
 from sphinx_needs.config import NeedsSphinxConfig
