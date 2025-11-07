@@ -6,8 +6,10 @@ First Feature
 .. feat:: First Example Feature
    :id: F_FEAT_1
 
+   :np:`(Sequence)` Diagram
+
    .. needarch::
-      :key: sequence
+      :key: Sequence
       :debug:
 
       'add your needed sphinx-needs elements to the list "components"
