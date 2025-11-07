@@ -145,11 +145,6 @@ n_needs_sequence_style = {
     "unit" : "participant",
 }
 
-needs_render_context = {
-    "sequence": sequence,
-    "sequence_style": n_needs_sequence_style
-}
-
 def sequence(needs, id):
     # todo: check that id is part of needs and raise excpetion if not.
     need_id = id
@@ -164,8 +159,12 @@ def sequence(needs, id):
         node_text=node_text,
         style=style,
     )
-
     return need_uml
+
+needs_render_context = {
+    "sequence": sequence,
+    "sequence_style": n_needs_sequence_style
+}
 
 from sphinx_needs.api import add_dynamic_function
 
