@@ -82,9 +82,9 @@ description = "Approval flag"
 schema.type = "boolean"
 
 [[needs.extra_links]]
-option = "details"
+option = "consists_of"
 incoming = "detail of"
-outgoing = "details"
+outgoing = "consists of"
 style = "#00AA00"
 style_start = "-"
 style_end = "->"
@@ -96,10 +96,10 @@ approved.default = "False"
 efforts.default = "0"
 asil.default = "QM"
 
-details.predicates = [
-   ["type == 'platform'", "[[copyall('id', filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.split(\"/\", 1)[0]and type == \"feat\"')]]"],
-   ["type == 'feat'", "[[copyall('id', filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0]and type == \"comp\"')]]"],
-   ["type == 'comp'", "[[copyall('id', filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
+consists_of.predicates = [
+   ["type == 'platform'", "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.split(\"/\", 1)[0]and type == \"feat\"')]]"],
+   ["type == 'feat'", "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0]and type == \"comp\"')]]"],
+   ["type == 'comp'", "[[copyall(filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
 ]
 template.predicates = [
    ["type == 'platform'", "feat_template"],

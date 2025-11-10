@@ -15,7 +15,7 @@ First Feature
       {{sequence(needs, cn)}} {{ref(cn)}}
 
       'add your needed sphinx-needs elements to the list "components"
-      {%- set components = need().details -%}
+      {%- set components = need().consists_of -%}
       {% for c in components %}
       {{sequence(needs, c)}} {{ref(c)}}
       {% endfor %}

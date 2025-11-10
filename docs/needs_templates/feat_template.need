@@ -8,7 +8,7 @@
    :key: Deployment
 
    {{flow(need().id)}} {
-   {% for detail in need().details %}
+   {% for detail in need().consists_of %}
    {{flow(detail)}}
    {% endfor %}
    {% if 'Deployment' in need().parts %}card "Deployment Diagram" as {{need().id + '.Deployment'}} {{ref(need().id + '.Deployment')}}{% endif %}

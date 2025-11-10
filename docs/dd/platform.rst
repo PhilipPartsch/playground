@@ -23,7 +23,7 @@ Platform
       activate {{ cn }}
 
       'add your needed sphinx-needs elements to the list "features"
-      {%- set features = need().details -%}
+      {%- set features = need().consists_of -%}
       {% for f in features %}
       {{ cn }} -> {{ f }}
       {{uml(f, 'Sequence')}}
@@ -39,7 +39,7 @@ Platform
 
       {{flow(need().id)}} {
       'add your needed sphinx-needs elements to the list "features"
-      {%- set features = need().details -%}
+      {%- set features = need().consists_of -%}
       {% for f in features %}
       {{uml(f, 'Deployment')}}
       {% endfor %}

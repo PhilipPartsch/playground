@@ -177,7 +177,7 @@ def copyall(
     app: Sphinx,
     need: NeedItem | NeedPartItem | None,
     needs: NeedsMutable | NeedsView,
-    option: str,
+    option: str = 'id',
     need_id: str | None = None,
     lower: bool = False,
     upper: bool = False,
