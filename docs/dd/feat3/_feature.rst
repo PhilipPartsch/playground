@@ -2,6 +2,11 @@
 Thired Feature
 ##############
 
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   requirements/index
 
 .. feat:: Third Feature
    :id: F_FEAT_3

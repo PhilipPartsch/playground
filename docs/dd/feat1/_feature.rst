@@ -2,6 +2,11 @@
 First Feature
 #############
 
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   requirements/index
 
 .. feat:: First Feature
    :id: F_FEAT_1

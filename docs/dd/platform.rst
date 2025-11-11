@@ -3,7 +3,6 @@ Platform
 ########
 
 .. toctree::
-   :caption: Components
    :maxdepth: 1
    :glob:
 
