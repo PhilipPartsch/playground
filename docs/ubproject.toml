@@ -12,6 +12,41 @@ color = "#BFD8D2"
 style = "node"
 
 [[needs.types]]
+directive = "req"
+title = "Requirement"
+prefix = "R_"
+color = "#BFD8D2"
+style = "node"
+
+[[needs.types]]
+directive = "aou_req"
+prefix = "aou_req__"
+title = "Assumption of Use Requirement"
+color = "#BFD8D2"
+style = "node"
+
+[[needs.types]]
+directive = "stkh_req"
+prefix = "stkh_req__"
+title = "Stakeholder Requirement"
+color = "#BFD8D2"
+style = "node"
+
+[[needs.types]]
+directive = "feat_req"
+prefix = "feat_req__"
+title = "Feature Requirement"
+color = "#BFD8D2"
+style = "node"
+
+[[needs.types]]
+directive = "comp_req"
+prefix = "comp_req__"
+title = "Component Requirement"
+color = "#BFD8D2"
+style = "node"
+
+[[needs.types]]
 directive = "spec"
 title = "Specification"
 prefix = "S_"
@@ -89,12 +124,23 @@ style = "#00AA00"
 style_start = "-"
 style_end = "->"
 
+[[needs.extra_links]]
+option = "satisfies"
+incoming = "satisfied by"
+outgoing = "satisfies"
+style = "#00AA00"
+style_start = "-"
+style_end = "->"
 
 [needs.global_options]
 status.default = "draft"
 approved.default = "False"
 efforts.default = "0"
 asil.default = "QM"
+
+satisfies.predicates = [
+   ["type == 'platform'", "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.split(\"/\", 1)[0]and type == \"stkh_req\"')]]"],
+]
 
 consists_of.predicates = [
    ["type == 'platform'", "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.split(\"/\", 1)[0]and type == \"feat\"')]]"],

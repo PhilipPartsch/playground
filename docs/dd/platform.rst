@@ -8,6 +8,7 @@ Platform
    :glob:
 
    feat*/*
+   platform_requirements/index
 
 .. platform:: First platform
    :id: P_PLATFORM_1
