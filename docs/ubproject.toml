@@ -1,6 +1,7 @@
 [needs]
 id_required = true
 id_length = 3
+id_regex = "^[A-Za-z0-9_]{5,}"
 schema_definitions_from_json = "schemas.json"
 build_json = true
 
