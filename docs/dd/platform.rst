@@ -7,8 +7,9 @@ Platform
    :maxdepth: 1
    :glob:
 
+   requirements/index
    feat*/*
-   platform_requirements/index
+
 
 .. platform:: First platform
    :id: P_PLATFORM_1

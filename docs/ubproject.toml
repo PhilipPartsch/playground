@@ -134,12 +134,13 @@ asil.default = "QM"
 
 satisfies.predicates = [
    ["type == 'platform'", "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.split(\"/\", 1)[0]and type == \"stkh_req\"')]]"],
+   ["type == 'feat'",     "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.split(\"/\", 1)[0]and type == \"feat_req\"')]]"],
 ]
 
 consists_of.predicates = [
    ["type == 'platform'", "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.split(\"/\", 1)[0]and type == \"feat\"')]]"],
-   ["type == 'feat'", "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0]and type == \"comp\"')]]"],
-   ["type == 'comp'", "[[copyall(filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
+   ["type == 'feat'",     "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0]and type == \"comp\"')]]"],
+   ["type == 'comp'",     "[[copyall(filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
 ]
 template.predicates = [
    ["type == 'platform'", "feat_template"],
