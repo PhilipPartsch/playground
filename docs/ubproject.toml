@@ -13,13 +13,6 @@ color = "#BFD8D2"
 style = "node"
 
 [[needs.types]]
-directive = "req"
-title = "Requirement"
-prefix = "R_"
-color = "#BFD8D2"
-style = "node"
-
-[[needs.types]]
 directive = "aou_req"
 prefix = "aou_req__"
 title = "Assumption of Use Requirement"
