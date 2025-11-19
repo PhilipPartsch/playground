@@ -3,7 +3,6 @@ Feature 1
 #############
 
 .. toctree::
-   :maxdepth: 1
    :glob:
 
    requirements/index
