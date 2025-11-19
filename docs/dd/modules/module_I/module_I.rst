@@ -8,5 +8,5 @@ Module I
 
    comp_*
 
-.. module:: Module I
+.. mod:: Module I
    :id: M_MODULE_I

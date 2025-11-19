@@ -69,7 +69,7 @@ color = "#dba48bff"
 style = "folder"
 
 [[needs.types]]
-directive = "module"
+directive = "mod"
 title = "Module"
 prefix = "M_"
 color = "#908bdbff"
