@@ -7,7 +7,7 @@ Platform
    :glob:
 
    requirements/index
-   feat*/*
+   features/feat*/*
 
 
 .. platform:: First platform
