@@ -3,7 +3,7 @@ Root of a platform project
 ##########################
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
    platform/platform
