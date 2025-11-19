@@ -8,8 +8,9 @@ Thired Feature
 
    requirements/index
 
-.. feat:: Third Feature
+.. feat:: Feature I
    :id: F_FEAT_I
+   :consists_of: M_MODULE_I
 
    :np:`(Sequence)` Diagram
 

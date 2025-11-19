@@ -8,8 +8,9 @@ First Feature
 
    requirements/index
 
-.. feat:: First Feature
+.. feat:: Feature 1
    :id: F_FEAT_1
+   :consists_of: M_MODULE_1
 
    :np:`(Sequence)` Diagram
 

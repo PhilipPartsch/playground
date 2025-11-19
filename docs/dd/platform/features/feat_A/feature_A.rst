@@ -8,8 +8,9 @@ Secound Feature
 
    requirements/index
 
-.. feat:: Secound Feature
+.. feat:: Feature A
    :id: F_FEAT_A
+   :consists_of: M_MODULE_A
 
    :np:`(Sequence)` Diagram
 

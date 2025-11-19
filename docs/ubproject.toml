@@ -69,6 +69,13 @@ color = "#dba48bff"
 style = "folder"
 
 [[needs.types]]
+directive = "module"
+title = "Module"
+prefix = "M_"
+color = "#908bdbff"
+style = "folder"
+
+[[needs.types]]
 directive = "comp"
 title = "Component"
 prefix = "C_"
@@ -79,7 +86,7 @@ style = "frame"
 directive = "unit"
 title = "Unit"
 prefix = "U_"
-color = "#8b97dbff"
+color = "#8bcfdbff"
 style = "card"
 
 [[needs.extra_options]]
@@ -139,7 +146,7 @@ satisfies.predicates = [
 
 consists_of.predicates = [
    ["type == 'platform'", "[[copyall(filter='type == \"feat\"')]]"],
-   # ["type == 'feat'",     "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0] and type == \"comp\"')]]"],
+   ["type == 'module'",     "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0] and type == \"comp\"')]]"],
    ["type == 'comp'",     "[[copyall(filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
 ]
 template.predicates = [

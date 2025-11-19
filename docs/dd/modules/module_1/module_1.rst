@@ -7,3 +7,6 @@ Module 1
    :glob:
 
    comp_*
+
+.. module:: Module 1
+   :id: M_MODULE_1
