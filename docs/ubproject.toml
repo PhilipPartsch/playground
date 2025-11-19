@@ -139,7 +139,7 @@ satisfies.predicates = [
 
 consists_of.predicates = [
    ["type == 'platform'", "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 2)[0]and type == \"feat\"')]]"],
-   ["type == 'feat'",     "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0]and type == \"comp\"')]]"],
+   # ["type == 'feat'",     "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0]and type == \"comp\"')]]"],
    ["type == 'comp'",     "[[copyall(filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
 ]
 template.predicates = [

@@ -9,7 +9,7 @@ Thired Feature
    requirements/index
 
 .. feat:: Third Feature
-   :id: F_FEAT_3
+   :id: F_FEAT_I
 
    :np:`(Sequence)` Diagram
 

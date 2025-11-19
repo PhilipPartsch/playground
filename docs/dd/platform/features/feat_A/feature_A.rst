@@ -9,7 +9,7 @@ Secound Feature
    requirements/index
 
 .. feat:: Secound Feature
-   :id: F_FEAT_2
+   :id: F_FEAT_A
 
    :np:`(Sequence)` Diagram
 
