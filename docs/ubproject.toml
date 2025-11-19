@@ -146,12 +146,14 @@ satisfies.predicates = [
 
 consists_of.predicates = [
    ["type == 'platform'", "[[copyall(filter='type == \"feat\"')]]"],
-   ["type == 'module'",     "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0] and type == \"comp\"')]]"],
+   ["type == 'mod'",     "[[copyall(filter='current_need[\"docname\"].rsplit(\"/\", 1)[0] == docname.rsplit(\"/\", 1)[0] and type == \"comp\"')]]"],
    ["type == 'comp'",     "[[copyall(filter='current_need[\"docname\"] == docname and type == \"unit\"')]]"],
 ]
+
 template.predicates = [
    ["type == 'platform'", "feat_template"],
    ["type == 'feat'", "feat_template"],
+   ["type == 'mod'", "feat_template"],
    ["type == 'comp'", "feat_template"],
 ]
 
