@@ -141,6 +141,7 @@ needs_from_toml = "ubproject.toml"
 n_needs_sequence_style = {
     "platform" : "participant",
     "feat" : "participant",
+    "mod" : "participant",
     "comp" : "participant",
     "unit" : "participant",
 }
