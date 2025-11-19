@@ -1,5 +1,5 @@
 ##############
-Thired Feature
+Feature I
 ##############
 
 .. toctree::

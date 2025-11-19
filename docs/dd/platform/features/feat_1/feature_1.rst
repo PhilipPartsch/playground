@@ -1,5 +1,5 @@
 #############
-First Feature
+Feature 1
 #############
 
 .. toctree::

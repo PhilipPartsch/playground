@@ -1,5 +1,5 @@
 ###############
-Secound Feature
+Feature A
 ###############
 
 .. toctree::
