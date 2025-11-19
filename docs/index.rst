@@ -4,7 +4,6 @@ Playground
 
 .. toctree::
    :caption: Contents
-   :maxdepth: 1
 
    content
    schema_example
